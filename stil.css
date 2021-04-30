@@ -1,0 +1,25 @@
+a{
+    text-decoration: none;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:black;
+}
+.container
+{
+    height: 50px;
+    background-color: aqua;
+}
+.col-sm-2
+{
+    background-color: beige;
+    text-align: center;
+}
+.temizle
+{
+    height: 15px;
+    width: 100%;
+}
+table{
+    border: 3px solid black;
+    
+    
+}
