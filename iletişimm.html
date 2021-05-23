@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1">
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="stil.css">
+        
+        
+    </head>
+    <body>
+        <div class="container" >
+            <div class="temizle"></div>
+        <div class="row">
+            <div class="col-sm-2 " ></div>
+            <div class="col-sm-2 "></div>
+            <div class="col-sm-2 " ></div>
+            <div class="col-sm-2 "></div>
+            <div class="col-sm-2 "><a href="iletişimm.html">İLETİŞİM</a></div>
+            <div class="col-sm-2 "><a href="giriş.html">GİRİŞ</a></div>
+        </div>
+        <div class="temizle" style="height:30px;"></div>
+        <div class="row" >
+            <div class="col-sm-2">
+            <hr>
+            <div class="nav"><a href="index.html">ANASAYFA</a>
+            </div>
+            <div class="nav "><a href="cv.html">KİŞİ CV</a></div>
+            <div class="nav" ><a href="ilgialanları.html">İLGİ ALANLARI</a></div>
+            <div class="nav"><a href="bartınhakkında.html">BARTIN HAKKINDA</a></div>
+            <div class="nav "><a href="mirasımız.html">MİRASIMIZ</a></div>
+            </div>
+            <div class="col-sm-8">
+                <div class="temizle"></div>
+                
+                <form  name="iletisimform" action="iletişimsonuc.php" method="POST">
+               <h5>İLETİŞİM FORMU</h5>
+               <hr>
+               <table>
+                   <tr>
+                       <td>Adı Soyadı:</td>
+                       <td> <input type="text" name="txtad" ></td>
+                     
+                   </tr>
+                   <tr>
+                       <td> E-Posta :</td>
+                       <td><input type="email" name="txtmail" ></td>
+                   </tr>
+                   <tr>
+                       <td>Telefon:</td>
+                       <td><input type="text" name="txttel"></td>
+                   </tr>
+                   <tr>
+                    <td>Cinsiyet:</td>
+                    <td>K<input type="radio" name="cinsiyet" value="K">
+                        E<input type="radio" name="cinsiyet" value="E"></td>
+                </tr>
+                <tr>
+                    <td>Yaşadığı İl:</td>
+                    <td><select name="il">
+                        <option value="0">&#706;seçiniz&#707</option>
+                        <option value="34">İstanbul</option>
+                        <option value="74">Bartın</option>
+                        <option value="54">Sakarya</option>
+                        <option value="35">İzmir</option>
+                        <option value="06">Ankara</option>
+                        <option value="06">Ankara</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>Okuduğu Üniversite:</td>
+                    <td><select name="üni">
+                        <option value="0">&#706;seçiniz&#707</option>
+                        <option value="1">Ankara Üniversitesi</option>
+                        <option value="2">Bartın Üniversitesi</option>
+                        <option value="3">Bolu İzzet Baysal Üniversitesi</option>
+                        <option value="4">Boğaziçi Üniversitesi</option>
+                        <option value="5">Ege Üniversitesi</option>
+                        <option value="6">İstanbul Teknik Üniversitesi</option>
+                        <option value="7">Sakarya Üniversitesi</option>
+                         </select></td>
+                </tr>
+                <tr>
+                    <td>Okuduğu Bölüm:</td>
+                    <td><select name="ünibölüm">
+                        <option value="0">&#706;seçiniz&#707</option>
+                        <option value="1">Ana Sınıfı Öğretmenliği</option>
+                        <option value="2">Beden Eğitimi Öğretmenliği</option>
+                        <option value="3">Bilgisayar Mühendisliği</option>
+                        <option value="4">Elektrik Elektronik Mühendisliği</option>
+                        <option value="5">Felsefe</option>
+                        <option value="6">Gastronomi</option>
+                        <option value="7">Halk İle İlişkiler</option>
+                        <option value="7">Makine Mühendisliği</option>
+                        <option value="7">Öğretmenlik</option>
+                        <option value="7">Psikoloji</option>
+                        <option value="7">Tıp</option>
+                        <option value="7">Uluslar Arası İlişkiler</option>
+                         </select></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" name="btngönder" value="GÖNDER"></td>
+                    <td><input type="button" name="btntemizle" value="TEMİZLE"></td>
+                </tr>
+               </table>
+            
+            </form>
+                 
+            </div>
+            <div class="col-sm-2">
+                <hr>
+                <a id="tıkla"href="https://mail.google.com">karismazp.gmail.com</a>
+                <a id="tıkla"href="https://www.instagram.com/">pinarkarismaz1</a><br><br>
+                <hr>
+                
+            </div>
+        </div>
+        <div class="temizle"></div>
+        <div class="card-footer">Tüm hakları saklıdır 2021</div>
+        </div>
+        <script>
+            function a(){
+var x=document.forms["iletisimform"]["txtad"].value;
+if(x=="")
+{
+alert("adınızzı giriniz");}
+else 
+{
+document.getElementById(x).innerHTML="PINAR";
+}
+}
+        </script>
+    </body>
+</html>
